@@ -3,7 +3,7 @@ The mvote system allows a poll manager to store, manipulate and access voter inf
 
 To run the program:
 1. Open terminal   
-2 Change the directory to where the file is stored    
+2. Change the directory to where the file is stored    
 3. Ensure that csv files you want to load are located in the file in which the make, header, function, and main files are loacted.   
 4. Type: make   
 5. Type: ./mvote -f filename -m hashtablesize OR ./mvote -f filename           
