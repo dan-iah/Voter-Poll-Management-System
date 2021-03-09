@@ -10,7 +10,7 @@ To run the program:
 
 Note on 5: the -m flag declaring hash table size is not neccessary as the alternative is that the program increments a num_lines counter whilst getting/going through all the lines in the file, using the total number of lines as the hash table capacity. If -m flag is used, a reasonable size (value following -m flag) is to be selected to allow for sufficient space for voter details to be input into hash table. For example for voters50.csv, -m 10 works however, -m 1 does not work.    
 
-There are two main strcutures that allow for the voter management:
+There are two main strcutures that allow for voter management:
 ------------------------------------------------------------------
 1. VoterHash: a hash table hashing participants RINs and saving their name, zip code, and default voter status of "N". Each index (RIN hash code) is a bucket that is a pointer to a linked list, where participants that hash at the same index value are all located. This hash table allows for O(1) look ups for the l command and for the deletion d command.   
 
