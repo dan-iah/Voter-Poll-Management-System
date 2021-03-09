@@ -3,13 +3,12 @@ The mvote system allows a poll manager to store, manipulate and access voter inf
 
 To run the program:
 1. Open terminal   
-2.1 Change the directory to where the file is stored    
-2.2 Ensure that csv files you want to load are located in the file in which the make, header, function, and main files are loacted.   
-3. Type: make   
-4.1 Type: ./mvote -f filename -m hashtablesize   
-4.2 OR Type: ./mvote -f filename    
+2 Change the directory to where the file is stored    
+3. Ensure that csv files you want to load are located in the file in which the make, header, function, and main files are loacted.   
+4. Type: make   
+5. Type: ./mvote -f filename -m hashtablesize OR ./mvote -f filename           
 
-Note on 4: the -m flag declaring hash table size is not neccessary as the alternative is that the program increments a num_lines counter whilst getting/going through all the lines in the file, using the total number of lines as the hash table capacity. If -m flag is used, a reasonable size (value following -m flag) is to be selected to allow for sufficient space for voter details to be input into hash table. For example for voters50.csv, -m 10 works however, -m 1 does not work.    
+Note on 5: the -m flag declaring hash table size is not neccessary as the alternative is that the program increments a num_lines counter whilst getting/going through all the lines in the file, using the total number of lines as the hash table capacity. If -m flag is used, a reasonable size (value following -m flag) is to be selected to allow for sufficient space for voter details to be input into hash table. For example for voters50.csv, -m 10 works however, -m 1 does not work.    
 
 There are two main strcutures that allow for the voter management:
 ------------------------------------------------------------------
